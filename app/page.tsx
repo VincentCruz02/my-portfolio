@@ -1,17 +1,27 @@
+import { Mail, Github, Linkedin } from "lucide-react";
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#111111] text-white">
       <header className="absolute top-0 z-10 w-full">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-8 py-6">
           <div className="text-sm font-semibold tracking-wide">
-            John Michael Vincent Cruz
+            John Michael Vincent R. Cruz
           </div>
 
           <nav className="hidden gap-8 text-sm text-gray-300 md:flex">
-            <a href="#about" className="hover:text-white">About</a>
-            <a href="#projects" className="hover:text-white">Projects</a>
-            <a href="#skills" className="hover:text-white">Skills</a>
-            <a href="#contact" className="hover:text-white">Contact</a>
+            <a href="#about" className="hover:text-white">
+              About
+            </a>
+            <a href="#projects" className="hover:text-white">
+              Projects
+            </a>
+            <a href="#skills" className="hover:text-white">
+              Skills
+            </a>
+            <a href="#contact" className="hover:text-white">
+              Contact
+            </a>
           </nav>
         </div>
       </header>
@@ -39,7 +49,8 @@ export default function Home() {
 
           <p className="mb-8 max-w-md text-base leading-7 text-gray-300">
             I’m a full stack developer focused on building modern and scalable
-            web applications using technologies like React, Next.js, NestJS, and Python, with experience in Git-based workflows and
+            web applications using technologies like React, Next.js, Tailwind
+            CSS, NestJS, and Python, with experience in Git-based workflows and
             clean backend architecture.
           </p>
 
@@ -63,8 +74,14 @@ export default function Home() {
 
       <section id="about" className="mx-auto max-w-7xl px-8 py-20">
         <h2 className="mb-6 text-3xl font-bold">About Me</h2>
+
         <p className="max-w-3xl text-gray-300 leading-7">
-          I’m John Michael Vincent R. Cruz, a Full Stack Developer passionate about building modern web applications with clean user interfaces and scalable backend systems. I served as a team leader in the SLF-ODR project, where I guided development efforts, coordinated with team members, and contributed to backend improvements using NestJS and TypeScript. I enjoy solving complex problems, improving system performance, and collaborating in team environments using Git-based development workflows.
+          I’m John Michael Vincent R. Cruz, a Full Stack Developer passionate
+          about building modern web applications with clean user interfaces and
+          scalable backend systems. I served as a team leader in the SLF-ODR
+          project where I helped guide development efforts, improve backend
+          stability, and collaborate with team members using Git-based
+          workflows.
         </p>
       </section>
 
@@ -72,7 +89,6 @@ export default function Home() {
         <h2 className="mb-8 text-3xl font-bold">Projects</h2>
 
         <div className="grid gap-6 md:grid-cols-2">
-
           <div className="rounded-2xl border border-gray-800 p-6 hover:border-gray-600 transition">
             <p className="text-xs text-gray-400 mb-2">
               Company Project • Private Repository
@@ -89,11 +105,10 @@ export default function Home() {
               a Git-based development environment.
             </p>
 
-            <a href="#" className="underline">
+            <a href="#" className="underline hover:text-gray-300">
               Internal Project
             </a>
           </div>
-
         </div>
       </section>
 
@@ -107,10 +122,11 @@ export default function Home() {
             "JavaScript",
             "React",
             "Next.js",
+            "Tailwind CSS",
             "NestJS",
             "Python",
+            "TypeScript",
             "Git",
-            "TypeScript"
           ].map((skill) => (
             <span
               key={skill}
@@ -124,9 +140,36 @@ export default function Home() {
 
       <section id="contact" className="mx-auto max-w-7xl px-8 py-20">
         <h2 className="mb-6 text-3xl font-bold">Contact</h2>
-        <p>Email: cruzjohnmichaelvincent33@gmail.com</p>
-        <p>GitHub: https://github.com/VincentCruz02</p>
-        <p>LinkedIn: www.linkedin.com/in/john-michael-vincent-cruz-2759213b7</p>
+
+        <div className="flex flex-col gap-4 text-gray-300">
+          <a
+            href="mailto:your@email.com"
+            className="flex items-center gap-3 hover:text-white transition duration-200"
+          >
+            <Mail size={20} />
+            cruzjohnmichaelvincent33@gmail.com
+          </a>
+
+          <a
+            href="https://github.com/yourusername"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-3 hover:text-white transition duration-200"
+          >
+            <Github size={20} />
+            github.com/VincentCruz02
+          </a>
+
+          <a
+            href="https://linkedin.com/in/yourusername"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-3 hover:text-white transition duration-200"
+          >
+            <Linkedin size={20} />
+            https://www.linkedin.com/in/john-michael-vincent-cruz-2759213b7/
+          </a>
+        </div>
       </section>
     </main>
   );
