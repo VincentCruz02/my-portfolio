@@ -143,21 +143,21 @@ export default function Home() {
 
         <div className="flex flex-col gap-4 text-gray-300">
           <a
-            href="mailto:your@email.com"
+            href="cruzjohnmichaelvincent33@gmail.com"
             className="flex items-center gap-3 hover:text-white transition duration-200"
           >
             <Mail size={20} />
-            cruzjohnmichaelvincent33@gmail.com
+            gmail
           </a>
 
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/VincentCruz02"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-3 hover:text-white transition duration-200"
           >
             <Github size={20} />
-            github.com/VincentCruz02
+            Github
           </a>
 
           <a
