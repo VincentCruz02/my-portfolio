@@ -161,13 +161,13 @@ export default function Home() {
           </a>
 
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://www.linkedin.com/in/john-michael-vincent-cruz/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-3 hover:text-white transition duration-200"
           >
             <Linkedin size={20} />
-            linkedin.com/in/john-michael-vincent-cruz
+            linkedin
           </a>
         </div>
       </section>
