@@ -167,7 +167,7 @@ export default function Home() {
             className="flex items-center gap-3 hover:text-white transition duration-200"
           >
             <Linkedin size={20} />
-            https://www.linkedin.com/in/john-michael-vincent-cruz-2759213b7/
+            www.linkedin.com/in/john-michael-vincent-cruz
           </a>
         </div>
       </section>
